@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="xmlAnim1"
+            android:text="XML属性动画1" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="xmlAnim2"
+            android:text="XML属性动画2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="keyframe"
+            android:text="Keyframe动画" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="viewAnimForNew"
+            android:text="view的animate动画" />
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/id_appear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#200f"
+        android:checked="true"
+        android:text="APPEARING" />
+    <CheckBox
+        android:id="@+id/id_change_appear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2ff0"
+        android:checked="true"
+        android:text="CHANGE_APPEARING" />
+    <CheckBox
+        android:id="@+id/id_disappear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#20f0"
+        android:checked="true"
+        android:text="DISAPPEARING" />
+    <CheckBox
+        android:id="@+id/id_change_disappear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2f00"
+        android:checked="true"
+        android:text="CHANGE_DISAPPEARING " />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="addBtn"
+        android:text="点击添加按钮，点击添加的按钮删除按钮" />
+    <GridLayout
+        android:id="@+id/gl_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:animateLayoutChanges="false"
+        android:background="#40f0"
+        android:columnCount="5" />
+</LinearLayout>
